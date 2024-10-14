@@ -14,26 +14,22 @@ class StartScreen extends StatelessWidget {
           height: double.infinity,
           decoration: const BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("assets/images/bg_mainscreen.png"),
+                  image: AssetImage(
+                      "assets/assets1/hintergruende/bg_startscreen.png"),
                   fit: BoxFit.cover)),
         )),
-        const Row(
-          children: [
-            SizedBox(
-              height: 850,
-              width: 150,
-            ),
-            Expanded(
-              child: SizedBox(
-                  child: Image(
-                image:
-                    AssetImage("assets/assets1/grafiken/chick cupcakes_3D.png"),
-                fit: BoxFit.cover,
-                width: 500,
-                height: 400,
-              )),
-            ),
-          ],
+        Positioned(
+            top: 120,
+            right: -130,
+            child:
+                Image.asset("assets/assets1/grafiken/chick cupcakes_3D.png")),
+        Positioned(
+          top: 450,
+          left: 50,
+          child: Image.asset(
+            "assets/assets1/details/T2.png",
+            color: Colors.white30,
+          ),
         ),
         SafeArea(
           child: Center(
