@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:jp_app/Screens/start_screen.dart';
 
 void main() {
-  runApp(());
+  runApp(const StartScreen());
 }
 
 class MainApp extends StatelessWidget {

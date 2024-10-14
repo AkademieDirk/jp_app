@@ -18,4 +18,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-  -assets/images 
+    - assets/images/
+    - assets/assets1/hintergruende/
+    - assets/assets1/hintergruende/bg_startscreen.png
+    - assets/assets1/grafiken/
