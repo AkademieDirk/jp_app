@@ -62,16 +62,13 @@ class TextButtonTransparent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(5),
-      child: SizedBox(
-        width: 100,
-        child: TextButton.icon(
-          onPressed: () {},
-          label: Text(text),
-          style: TextButton.styleFrom(
-              backgroundColor: Colors.white.withOpacity(0.3)),
-        ),
+    return SizedBox(
+      width: 100,
+      child: TextButton.icon(
+        onPressed: () {},
+        label: Text(text),
+        style: TextButton.styleFrom(
+            backgroundColor: Colors.white.withOpacity(0.3)),
       ),
     );
   }

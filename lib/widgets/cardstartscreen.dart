@@ -31,7 +31,7 @@ class Cardstartscreen extends StatelessWidget {
         const Text(
             "Explore Angis most popular Snack selection and get instantly happy. ",
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white, fontSize: 14)),
+            style: TextStyle(color: Colors.grey, fontSize: 14)),
         const SizedBox(
           height: 10,
         ),
@@ -40,7 +40,7 @@ class Cardstartscreen extends StatelessWidget {
           height: 50,
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.pink[400],
+                backgroundColor: Colors.pink[200],
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(14),
                 )),

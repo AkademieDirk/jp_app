@@ -21,7 +21,7 @@ class StartScreen extends StatelessWidget {
           )),
           Positioned(
               top: 120,
-              right: -130,
+              right: -120,
               child:
                   Image.asset("assets/assets1/grafiken/chick cupcakes_3D.png")),
           Positioned(

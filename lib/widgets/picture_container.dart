@@ -8,7 +8,7 @@ class PictureContainerCardBig extends StatelessWidget {
     return Stack(
       children: [
         Positioned(
-          top: 200,
+          top: 250,
           right: 20,
           child: Container(
             color: Colors.transparent,
@@ -22,13 +22,13 @@ class PictureContainerCardBig extends StatelessWidget {
           ),
         ),
         const Positioned(
-            top: 240,
+            top: 290,
             right: 40,
             child: Image(
                 image: AssetImage("assets/assets2/grafiken/Burger_3D.png"))),
         Positioned(
           left: 50,
-          top: 230,
+          top: 280,
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Row(
@@ -74,7 +74,7 @@ class PictureContainerCardBig extends StatelessWidget {
         ),
         Positioned(
           left: 60,
-          top: 370,
+          top: 420,
           child: Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
