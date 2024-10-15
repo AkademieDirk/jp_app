@@ -29,7 +29,7 @@ class Cardstartscreen extends StatelessWidget {
           height: 20,
         ),
         const Text(
-            "Explore Angis most popular Snack selection /n and get instantly happy. ",
+            "Explore Angis most popular Snack selection and get instantly happy. ",
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white, fontSize: 14)),
         const SizedBox(

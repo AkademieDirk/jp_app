@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jp_app/cardstartscreen.dart';
+import 'package:jp_app/widgets/cardstartscreen.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
