@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jp_app/Screens/shopping_cart.dart';
 
 class PictureContainerCardBig extends StatelessWidget {
   const PictureContainerCardBig({super.key});
@@ -63,7 +64,7 @@ class PictureContainerCardBig extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 10),
               child: Text(
-                "13.99",
+                "€ 13.99",
                 style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
@@ -75,16 +76,30 @@ class PictureContainerCardBig extends StatelessWidget {
         Positioned(
           left: 60,
           top: 420,
-          child: Container(
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.purple.withOpacity(0.5)),
-            height: 40,
-            width: 110,
-            child: const Center(
-              child: Text(
-                "Add to order",
-                style: TextStyle(color: Colors.white),
+          child: GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const ShoppingCard()));
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Color.fromARGB(255, 207, 178, 188),
+                      blurRadius: 10,
+                      spreadRadius: 5,
+                      offset: Offset(0, 1),
+                    )
+                  ],
+                  color: Colors.purple.withOpacity(0.5)),
+              height: 40,
+              width: 110,
+              child: const Center(
+                child: Text(
+                  "Add to order",
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
             ),
           ),
