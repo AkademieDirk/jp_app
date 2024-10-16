@@ -10,8 +10,8 @@ class TextButtonTwoIcon extends StatelessWidget {
     required this.icon2,
   });
   final String text;
-  final IconData icon1;
-  final IconData icon2;
+  final Icon icon1;
+  final Icon icon2;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -24,10 +24,13 @@ class TextButtonTwoIcon extends StatelessWidget {
         filter: ImageFilter.blur(sigmaX: 1, sigmaY: 1),
         child: Row(
           children: [
-            Icon(icon1),
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: icon1,
+            ),
             const Padding(padding: EdgeInsets.all(2)),
             Text(text),
-            Icon(icon2)
+            icon2
           ],
         ),
       ),
