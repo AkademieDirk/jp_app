@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jp_app/Screens/main_screen.dart';
 
 class Cardstartscreen extends StatelessWidget {
   const Cardstartscreen({
@@ -9,11 +10,10 @@ class Cardstartscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return
         //! warum wird hier imme rder ganze Screen geblurt?
-        // BackdropFilter(
-        // filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-        // child:
+
         Card(
-      elevation: 1,
+      elevation: 2,
+      shadowColor: Colors.grey,
       color: Colors.black26,
       margin: const EdgeInsetsDirectional.only(top: 500, bottom: 100),
       child: Column(children: [
@@ -44,7 +44,10 @@ class Cardstartscreen extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(14),
                 )),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const MainScreen()));
+            },
             child: const Text(
               "Order Now",
               style: TextStyle(

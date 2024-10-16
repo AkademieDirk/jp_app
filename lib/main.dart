@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jp_app/Screens/main_screen.dart';
 import 'package:jp_app/Screens/start_screen.dart';
-import 'package:jp_app/widgets/selection_card.dart';
 
 void main() {
   runApp(const StartScreen());

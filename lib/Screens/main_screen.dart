@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jp_app/widgets/Selection_card.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:jp_app/widgets/picture_container.dart';
 import 'package:jp_app/widgets/text_button_examples.dart';
 
@@ -47,8 +47,16 @@ class MainScreen extends StatelessWidget {
                 Row(children: [
                   TextButtonTwoIcon(
                     text: "All Categories ",
-                    icon1: Icons.abc_sharp,
-                    icon2: Icons.ac_unit_rounded,
+                    icon1: Icon(
+                      FontAwesomeIcons.carrot,
+                      color: Colors.black26,
+                      size: 14,
+                    ),
+                    icon2: Icon(
+                      FontAwesomeIcons.cheese,
+                      color: Colors.black26,
+                      size: 14,
+                    ),
                   ),
                   SizedBox(
                     width: 15,
